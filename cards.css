@@ -1,0 +1,144 @@
+/*cards.formation.animation*/
+body {
+    background: #ffffff ;
+}
+.container{
+    margin-top: 2%;
+}      
+.single-content{
+    position:relative;
+    transition: .3s;
+    box-shadow: 10px 20px 20px #d0d0d1;
+}
+
+.single-content .text-content,
+.single-content:after {
+    position: absolute;
+    left: 20px;
+    right: 20px;
+}
+
+.single-content:after{
+content:'';
+display: block;
+background: #ce0034b9;
+top: 20px;
+bottom: 20px;
+opacity:0;
+transform: rotate3d(-1,1,0,100deg);
+transition: .4s;
+}
+
+.single-content:hover:after{
+    opacity: .9;
+    transform: rotate3d(0,0,0,0deg);
+}
+.single-content img{
+    width: 100%;
+    height: auto;
+}
+.text-content{
+    top: 45%;
+    opacity: 0;
+    z-index: 1;
+    transform: translate(10%,-30%);
+    transition: .3s;
+    text-align: center;
+    color: #fff;
+}
+.text-content h4{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.single-content:hover .text-content{
+    opacity: 1;
+    transform: translate(0,-50%);
+    transition-delay: .5s;
+}
+
+/*Logosimplon*/
+.logosimplon{
+    content: "";
+    transform: translateY(-57px);
+    opacity: .2;
+    filter: brightness(.8);
+    position: absolute;
+    height: 22px;
+    width: inherit;
+    background-repeat: no-repeat;
+    background-position: 100%;
+}
+
+.btn-danger{
+    background-color: #ce0033 !important;
+}
+
+
+/*cards.offre*/
+.card{
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+    padding: 14px 80px 18px 36px;
+    cursor: pointer;
+}
+
+.card:hover{
+     transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+.card h3{
+  font-weight: 600;
+}
+
+.card img{
+  position: absolute;
+  top: 20px;
+  right: 0px;
+  max-height: 140px;
+}
+/*ajout imgages
+.card-1{
+  background-image: url(images/6.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 120px;
+}
+
+.card-2{
+   background-image: url(images/3.jpg);
+      background-repeat: no-repeat;
+    background-position: right;
+    background-size: 120px;
+}
+
+.card-3{
+   background-image: url(images/4.jpg);
+      background-repeat: no-repeat;
+    background-position: right;
+    background-size: 120px;
+}
+*/
+
+@media(max-width: 990px){
+  .card{
+    margin: 20px;
+  }
+} 
+.banner{
+    background-color: rgb(207, 207, 207);
+    height: 80px;
+    width: 100%;
+}
+
+marquee {
+    margin-top:1.5rem;
+    font-size: 20px;
+}
+.formationtitre h3 {
+    text-align: center;
+}
+
+
+
